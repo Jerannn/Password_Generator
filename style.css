@@ -54,13 +54,14 @@ h5 {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  border: 1px solid #fff;
+  background: #2c2b35;
   position: relative;
 }
 .container .password-generator .inputSection .generatedPassword {
   width: 100%;
   font-size: 1.4rem;
   padding: 0.8em;
+  padding-right: 54px;
   border: 0;
   outline: 0;
   border-radius: 2px;
