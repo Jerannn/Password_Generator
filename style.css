@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100dvh;
+  background: #24232b;
+  color: #fff;
+  font-family: "Inconsolata", monospace;
+}
+
+span {
+  font-size: 1.2rem;
+}
+
+h5 {
+  font-size: 1.2rem;
+  font-weight: 100;
+  letter-spacing: 1px;
+  color: #c6c6d1;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
+  border: 0;
+  border-radius: 5px;
+}
+.container .title {
+  font-size: 1.7rem;
+  margin-bottom: 20px;
+  color: #c6c6d1;
+}
+
+.container .password-generator {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.container .password-generator .generatedPassword {
+  width: 100%;
+  font-size: 1.4rem;
+  padding: 0.8em;
+  border: 0;
+  outline: 0;
+  border-radius: 2px;
+  background: #2c2b35;
+  color: #c6c6d1;
+}
+
+.container .password-generator .passwordCombination {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 20px;
+  background: #2c2b35;
+  padding: 1em;
+  width: 100%;
+}
+
+.container .password-generator .passwordCombination .charLength {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.container
+  .password-generator
+  .passwordCombination
+  .charLength
+  .passwordRangeValue {
+  color: #00c895;
+}
+
+.container .password-generator .passwordCombination .passwordRange {
+  margin-bottom: 30px;
+  appearance: none;
+  background: #24232b;
+  border-radius: 10px;
+}
+
+.container
+  .password-generator
+  .passwordCombination
+  .passwordRange::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 20px;
+  width: 20px;
+  background: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.container .password-generator .passwordCombination .combination {
+  margin-top: 10px;
+  display: flex;
+  gap: 0.5em;
+}
+
+.container .passwordStrength {
+  border: 1px solid #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8em;
+  margin-top: 30px;
+}
+
+.container .passwordStrength .strengths {
+  display: flex;
+  gap: 0.3em;
+}
+
+.container .passwordStrength .strength {
+  width: 7px;
+  height: 20px;
+  background: #24232b;
+  border: 1px solid #fff;
+}
+
+.container .generateBtn {
+  border: 0;
+  padding: 0.6em;
+  font-size: 1rem;
+  border-radius: 2px;
+  margin-top: 40px;
+  cursor: pointer;
+  background: #00c895;
+  width: 100%;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input[type="checkbox"]:after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f00c";
+  font-size: 15px;
+  color: #fff;
+  display: none;
+}
+
+input[type="checkbox"] {
+  background-color: #24232b;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #24232b;
+}
+
+input[type="checkbox"]:checked:after {
+  display: block;
+}
