@@ -10,12 +10,27 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
     <link type="image/png" sizes="96x96" rel="icon" href="logo_tab.png" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
   </head>
   <body>
     <div class="container">
       <p class="title">Password Generator</p>
       <div class="password-generator">
-        <input type="text" placeholder="P4$5W0rD!" class="generatedPassword" />
+        <div class="inputSection">
+          <input
+            type="text"
+            placeholder="P4$5W0rD!"
+            class="generatedPassword"
+          />
+          <button class="copyTextBtn">
+            <span class="copiedText">copied</span>
+            <span class="material-symbols-outlined"> content_copy </span>
+          </button>
+        </div>
         <div class="passwordCombination">
           <span class="charLength"
             ><label>Character Length</label>

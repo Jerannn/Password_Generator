@@ -49,7 +49,15 @@ h5 {
   flex-direction: column;
   align-items: center;
 }
-.container .password-generator .generatedPassword {
+.container .password-generator .inputSection {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #fff;
+  position: relative;
+}
+.container .password-generator .inputSection .generatedPassword {
   width: 100%;
   font-size: 1.4rem;
   padding: 0.8em;
@@ -59,7 +67,22 @@ h5 {
   background: #2c2b35;
   color: #c6c6d1;
 }
-
+.container .password-generator .inputSection .copiedText {
+  display: none;
+}
+.container .password-generator .inputSection .copyTextBtn {
+  position: absolute;
+  right: 1em;
+  top: auto;
+  bottom: auto;
+  background: #2c2b35;
+  border: 0;
+  color: #00c895;
+  cursor: pointer;
+}
+.container .password-generator .inputSection .copyTextBtn:active {
+  transform: scale(0.9);
+}
 .container .password-generator .passwordCombination {
   display: flex;
   justify-content: center;
